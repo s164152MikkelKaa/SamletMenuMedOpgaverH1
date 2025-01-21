@@ -33,10 +33,10 @@ namespace SamletMenuMedOpgaverH1
                         theProgramStage = SubmenueBasic();
                         break;
                     case 2:
-                        theProgramStage = 0;
+                        theProgramStage = SubmenueIntermedeate();
                         break;
                     case 3:
-                        theProgramStage = 0;
+                        theProgramStage = SubmenueAdvanced();
                         break;
                     default:
                         // Error protection and display main menue again.
@@ -132,7 +132,7 @@ namespace SamletMenuMedOpgaverH1
                 Console.WriteLine("\t16) Grundlæggende BMI-beregner.");
                 Console.WriteLine("\t17) String Formattering.");
                 Console.WriteLine("\t18) Talgenkendelse med Løkker.");
-                Console.WriteLine("\t19) Grunding af Versionsstyring. *?*"); // "introduce practical use throughout the assignment"... how?
+                Console.WriteLine("\t19) Grunding af Versionsstyring.");
                 Console.WriteLine("\t20) Basis Login System.");
                 Console.WriteLine();
                 Console.WriteLine("\t R) Returner til hovedmenu.");
@@ -209,7 +209,6 @@ namespace SamletMenuMedOpgaverH1
                     case 6:
                         string theInputCase6Operator, theInputCase6Number1, theInputCase6Number2;
                         double theConvertedInput1Case6, theConvertedInput2Case6;
-                        bool inputTjekCase6 = true;
                         Console.WriteLine("Indtast en af de følgende operatore og afslut med enter: + - * /");
                         theInputCase6Operator = Console.ReadLine();
                         switch (theInputCase6Operator)
@@ -327,8 +326,10 @@ namespace SamletMenuMedOpgaverH1
                         }
                         break;
                     case 13:
+                        // Method of showing the awnser to this assignment is unclear (skip to solve other assignments).
                         break;
                     case 14:
+                        // Assignment not found (skip to solve other assignments).
                         break;
                     case 15:
                         bool theInTesterCase15;
@@ -410,7 +411,17 @@ namespace SamletMenuMedOpgaverH1
                         break;
                     case 19:
                         Console.WriteLine("Versionsstyring.");
-                        Console.WriteLine("Versionsstyring.");
+                        Console.WriteLine("Versionsstyring kort fortalt er når man gemmer tidligere versioner af det arbejde man laver,");
+                        Console.WriteLine("dette kan være hver gang man laver ændringer ved produktet eller det kan være basetet på tid.");
+                        Console.WriteLine("Betegnelsen bruges mest i henhold til programmering, her ses anvendelsen af værktøjer som");
+                        Console.WriteLine("git og services som GitHub til disse formål.");
+                        Console.WriteLine("Ved at have en log over ændringer og muligheden for at kunne genskabe tidligere versioner");
+                        Console.WriteLine("kan man gå tilbage til en tidligere version, dette er særligt praktisk i eksempler hvor");
+                        Console.WriteLine("en halvejst implementeret funktionalitet viser sig at være umulig at færdigøre.");
+                        Console.WriteLine("Et andet eksempel er hvor man ønsker at ændre noget kode, men man ikke kan gennemskue");
+                        Console.WriteLine("grunden til at koden blev skrevet i første omgang, med versionsstyring kan man gå tilbage og");
+                        Console.WriteLine("se hvad formålet med den pågældende kode var.");
+                        // "introducer praktisk brug i opgaverne" I am unsure of how to do so.
                         break;
                     case 20:
                         string theInUsernameCase20, theInPasswordCase20;
@@ -453,7 +464,7 @@ namespace SamletMenuMedOpgaverH1
                 Console.ResetColor();
                 Console.WriteLine();
                 Console.WriteLine("\t\tSamlet menu med opgaver.");
-                Console.WriteLine("\t\tBegynderopgaver menu:");
+                Console.WriteLine("\t\tRutinerede opgaver menu:");
                 Console.WriteLine();
                 Console.WriteLine("\tIndtast indikatoren for det ønskede menupunkt og afslut med enter.");
                 Console.WriteLine();
@@ -550,7 +561,7 @@ namespace SamletMenuMedOpgaverH1
                 Console.ResetColor();
                 Console.WriteLine();
                 Console.WriteLine("\t\tSamlet menu med opgaver.");
-                Console.WriteLine("\t\tBegynderopgaver menu:");
+                Console.WriteLine("\t\tAvancerede opgaver menu:");
                 Console.WriteLine();
                 Console.WriteLine("\tIndtast indikatoren for det ønskede menupunkt og afslut med enter.");
                 Console.WriteLine();
